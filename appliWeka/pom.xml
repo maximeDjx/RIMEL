@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>rimel</groupId>
+    <artifactId>appliWeka</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+     <dependencies>
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-stable</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20170516</version>
+        </dependency>
+
+        <!-- LibSvm -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>LibSVM</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+
+        <!-- RBFNetwork -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>RBFNetwork</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+
+        <!-- IB1 -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>simpleEducationalLearningSchemes</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- ClassificationViaClustering -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>classificationViaClustering</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+
+        <!-- Dagging -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>dagging</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- Decorate -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>decorate</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- MultiBoostAB -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>multiBoostAB</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- OrdinalClassClassifier -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>ordinalClassClassifier</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- RacedIncrementalLogitBoost -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>racedIncrementalLogitBoost</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- RotationForest -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>rotationForest</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- HyperPipes -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>hyperPipes</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- VFI -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>votingFeatureIntervals</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- ConjunctiveRule -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>conjunctiveRule</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+
+        <!-- DTNB -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>DTNB</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- NNge -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>NNge</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- Ridor -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>ridor</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- ADTree -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>alternatingDecisionTrees</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+
+        <!-- NBTree -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>naiveBayesTree</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- GridSearch -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>gridSearch</artifactId>
+            <version>1.0.11</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>${project.build.finalName}.lib/</classpathPrefix>
+                            <mainClass>rimel.appliweka.Launcher</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/${project.build.finalName}.lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

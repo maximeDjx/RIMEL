@@ -1,0 +1,12 @@
+Algorithme IB1 classifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+IB1 classifier
