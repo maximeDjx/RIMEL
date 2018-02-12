@@ -1,12 +1,850 @@
-Algorithme IB1 classifier
+Algorithme Stacking
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 10
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme LADTree
 Capabilities
 Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
 Dependencies: []
-min # Instance: 0
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
 
+Algorithme NaiveBayesMultinomial
+Capabilities
+Capabilities: [Numeric attributes, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme AdditiveRegression
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme Dagging
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme SGDText
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Missing values, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
 Other capabilities
 Capabilities: []
 Dependencies: []
 min # Instance: 0
 
-IB1 classifier
+Algorithme RBFClassifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme VotedPerceptron
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme AttributeSelectedClassifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme NBTree
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme SimpleLogistic
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme HoeffdingTree
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme RandomTree
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme VFI
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme LinearRegression
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme ClassificationViaClustering
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme CostSensitiveClassifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme LWL
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme Vote
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme ConjunctiveRule
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme M5Rules
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme Ridor
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme RandomForest
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme NaiveBayesMultinomialText
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme ZeroR
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme BayesNetGenerator
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme SimpleLinearRegression
+Capabilities
+Capabilities: [Numeric attributes, Date attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme GridSearch
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme ADTree
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme MultilayerPerceptron
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme SMO
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme RBFRegressor
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme REPTree
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme PLSClassifier
+Capabilities
+Capabilities: [Numeric attributes, Date attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme RandomSubSpace
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme IB1
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme NNge
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme NaiveBayesUpdateable
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme SMOreg
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme Prism
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme Bagging
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme NaiveBayesSimple
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme AdaBoostM1
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme M5P
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme Decorate
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 15
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme JRip
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 3
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme MultiBoostAB
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme J48
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme LogisticBase
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme DecisionTable
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme NaiveBayes
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme InputMappedClassifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme MultiClassClassifierUpdateable
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme PART
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme RandomizableFilteredClassifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Relational attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme RandomCommittee
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme Id3
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme ClassificationViaRegression
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme BayesNet
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme LogitBoost
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme RacedIncrementalLogitBoost
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme LibSVM
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal class, Binary class, Unary class, Numeric class, Date class]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme OrdinalClassClassifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme HyperPipes
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme DTNB
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme EditableBayesNet
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme NaiveBayesMultinomialUpdateable
+Capabilities
+Capabilities: [Numeric attributes, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme DecisionStump
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme MultiScheme
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme GaussianProcesses
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme OneR
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme CVParameterSelection
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 10
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme SerializedClassifier
+Capabilities
+Capabilities: []
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme Logistic
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme FilteredClassifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme RBFNetwork
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme SGD
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme LMT
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme IBk
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme WeightedInstancesHandlerWrapper
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme KStar
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Numeric class, Date class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 0
+
+Algorithme RotationForest
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme IterativeClassifierOptimizer
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Nominal class, Binary class, Unary class, Empty nominal class, Numeric class, Date class, String class, Relational class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme BIFReader
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: []
+min # Instance: 0
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
+Algorithme MultiClassClassifier
+Capabilities
+Capabilities: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, Missing values, Nominal class, Binary class, Missing class values]
+Dependencies: [Nominal attributes, Binary attributes, Unary attributes, Empty nominal attributes, Numeric attributes, Date attributes, String attributes, Relational attributes, Missing values, No class, Missing class values, Only multi-Instance data]
+min # Instance: 1
+Other capabilities
+Capabilities: []
+Dependencies: []
+min # Instance: 1
+
