@@ -10,6 +10,12 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <parent>
+        <groupId>rimel</groupId>
+        <version>1.0</version>
+        <artifactId>Rimel</artifactId>
+    </parent>
     
      <dependencies>
         <dependency>

@@ -1,0 +1,2140 @@
+
+ 
+ Fichier : AbstractClassifier.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+    } catch (Exception e) {
+      if (((e.getMessage() != null)
+        && (e.getMessage().indexOf("General options") == -1))
+        || (e.getMessage() == null)) {
+
+      } catch (Exception ex) {
+        ex.printStackTrace();
+      }
+    }
+ 
+ Fichier : AggregateableEvaluation.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : BayesNet.java
+ nombres Exeptions : 6
+ les exception sont : 
+
+    } catch (Throwable t) {
+      m_otherBayesNet = null;
+    }
+  }
+
+    } catch (ArithmeticException ex) {
+      return Double.NaN;
+    }
+  } // measureBayesScore
+
+    } catch (ArithmeticException ex) {
+      return Double.NaN;
+    }
+  } // measureBDeuScore
+
+    } catch (ArithmeticException ex) {
+      return Double.NaN;
+    }
+  } // measureMDLScore
+
+    } catch (ArithmeticException ex) {
+      return Double.NaN;
+    }
+  } // measureAICScore
+
+    } catch (ArithmeticException ex) {
+      return Double.NaN;
+    }
+  } // measureEntropyScore
+ 
+ Fichier : NaiveBayes.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (Exception ex) {
+        text.append(ex.getMessage());
+      }
+    }
+ 
+ Fichier : NaiveBayesMultinomial.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NaiveBayesMultinomialText.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NaiveBayesMultinomialUpdateable.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NaiveBayesUpdateable.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ADNode.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Throwable t) {
+      t.printStackTrace();
+    }
+  } // main
+ 
+ Fichier : BayesNetGenerator.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+      printOptions(b);
+    }
+ 
+ Fichier : BIFReader.java
+ nombres Exeptions : 6
+ les exception sont : 
+
+          } catch (NumberFormatException e) {
+            System.err.println("Wrong number format in position :(" + sX + ","
+              + sY + ")");
+            m_nPositionX[iNode] = 0;
+
+    } catch (Exception e) {
+      System.err.println(e.getMessage());
+      return 0;
+    }
+
+    } catch (Exception e) {
+      System.err.println(e.getMessage());
+      return 0;
+    }
+
+    } catch (Exception e) {
+      System.err.println(e.getMessage());
+      return 0;
+    }
+
+    } catch (Exception e) {
+      System.err.println(e.getMessage());
+      return 0;
+    }
+
+    } catch (Throwable t) {
+      t.printStackTrace();
+    }
+  } // main
+ 
+ Fichier : EditableBayesNet.java
+ nombres Exeptions : 39
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    m_bNeedsUndoAction = bNeedsUndoAction;
+
+    } catch (Exception e) {
+      throw e;
+    }
+    paste(sXML, EXECUTE);
+
+          } catch (NumberFormatException e) {
+            System.err.println("Wrong number format in position :(" + sX + ","
+              + sY + ")");
+          }
+
+      } catch (Exception e) {
+        // ignore. it's not a SetPositionAction
+      }
+      if (!isUpdate) {
+
+      } catch (Exception e) {
+        // ignore. it's not a SetPositionAction
+      }
+      if (!isUpdate) {
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+      m_deleteArcActions = new ArrayList<DeleteArcAction>();
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+        m_nPosX[iNode] = getPositionX(nTargetNode);
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // c'tor
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // c'tor
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // c'tor
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // c'tor
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // c'tor
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // undo
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // redo
+ 
+ Fichier : BayesNetEstimator.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : BMAEstimator.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : DiscreteEstimatorBayes.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      System.out.println(e.getMessage());
+    } 
+  }    // main
+ 
+ Fichier : DiscreteEstimatorFullBayes.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      System.out.println(e.getMessage());
+    } 
+  }    // main
+ 
+ Fichier : MultiNomialBMAEstimator.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SimpleEstimator.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (IllegalArgumentException ex) {
+      return new double[nNumClasses]; // predict missing value
+    }
+
+ 
+ Fichier : GUI.java
+ nombres Exeptions : 36
+ les exception sont : 
+
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+          }
+
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+            dlg.setVisible(false);
+
+                    } catch (Exception e2) {
+                      e2.printStackTrace();
+                    }
+                  }
+
+            } catch (Exception ex) {
+              ex.printStackTrace();
+              System.err.println(ex.getMessage());
+            }
+
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+            dlg.setVisible(false);
+
+      } catch (Exception e) {
+        JOptionPane.showMessageDialog(null,
+          "Data set is not compatible with network.\n" + e.getMessage()
+            + "\nChoose other instances (menu Tools/Set Data)");
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+      updateStatus();
+
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+      }
+
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+            repaint();
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    }
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    }
+
+          } catch (Exception e) {
+            e.printStackTrace();
+          }
+        }
+
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    } // saveFile
+
+        } catch (PrinterException pe) {
+          m_jStatusBar.setText("Error printing: " + pe);
+          m_bIsPrinting = false;
+        }
+
+              } catch (NumberFormatException ne) {
+                JOptionPane.showMessageDialog(GUI.this.getParent(),
+                  "Invalid integer entered for node width.", "Error",
+                  JOptionPane.ERROR_MESSAGE);
+
+              } catch (NumberFormatException ne) {
+                JOptionPane.showMessageDialog(GUI.this.getParent(),
+                  "Invalid integer entered for node height.", "Error",
+                  JOptionPane.ERROR_MESSAGE);
+
+        } catch (NumberFormatException ne) {
+          JOptionPane.showMessageDialog(GUI.this.getParent(),
+            "Invalid integer entered for zoom.", "Error",
+            JOptionPane.ERROR_MESSAGE);
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+      return;
+    }
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+      return;
+    }
+
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+          }
+
+          } catch (Exception e) {
+            e.printStackTrace();
+          }
+        }
+
+          } catch (Exception e) {
+            e.printStackTrace();
+          }
+          repaint();
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    } // handleRightNodeClick
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  } // layoutGraph
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    repaint();
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  } // addArcInto
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    updateStatus();
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    updateStatus();
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+      updateStatus();
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    repaint();
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    updateStatus();
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    updateStatus();
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    updateStatus();
+
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+        dlg.setVisible(false);
+
+      } catch (IOException ex) {
+        ex.printStackTrace();
+      } catch (BIFFormatException bf) {
+
+      } catch (BIFFormatException bf) {
+ 
+ Fichier : MarginCalculator.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  } // main
+ 
+ Fichier : ParentSet.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : CISearchAlgorithm.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ICSSearchAlgorithm.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  } // main
+ 
+ Fichier : FromFile.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NaiveBayes.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : GeneticSearch.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (Exception e) {
+        // ignore
+      }
+    } // calcScore
+ 
+ Fichier : GlobalScoreSearchAlgorithm.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : HillClimber.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : K2.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RepeatedHillClimber.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SimulatedAnnealing.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : TabuSearch.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : TAN.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : GeneticSearch.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : HillClimber.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : K2.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : LAGDHillClimber.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : LocalScoreSearchAlgorithm.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RepeatedHillClimber.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Scoreable.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SimulatedAnnealing.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : TabuSearch.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : TAN.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SearchAlgorithm.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : VaryNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : BVDecompose.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+      } catch (Exception ex) {
+        String result = ex.getMessage() + "\nBVDecompose Options:\n\n";
+        Enumeration<Option> enu = bvd.listOptions();
+        while (enu.hasMoreElements()) {
+
+    } catch (Exception ex) {
+      System.err.println(ex.getMessage());
+    }
+  }
+ 
+ Fichier : BVDecomposeSegCVSub.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+            } catch (Exception ex) {
+                String result = ex.getMessage() + "\nBVDecompose Options:\n\n";
+                Enumeration<Option> enu = bvd.listOptions();
+                while (enu.hasMoreElements()) {
+
+        } catch (Exception ex) {
+            System.err.println(ex.getMessage());
+        }
+
+ 
+ Fichier : CheckClassifier.java
+ nombres Exeptions : 14
+ les exception sont : 
+
+    } catch (Exception e) {
+      result[0] = false;
+      println("no");
+      if (m_Debug) {
+
+    } catch (Exception ex) {
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+    try {
+
+    } catch (Exception ex) {
+      String msg = ex.getMessage().toLowerCase();
+      if (msg.indexOf("worse than zeror") >= 0) {
+        println("warning: performs worse than ZeroR");
+
+    } catch (Exception ex) {
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+    try {
+
+    } catch (Exception ex) {
+      result[0] = false;
+
+      print("Problem during");
+
+    } catch (Exception ex) {
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+    try {
+
+    } catch (Exception ex) {
+      println("no");
+      result[0] = false;
+
+
+    } catch (Exception ex) {
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+    try {
+
+    } catch (Exception ex) {
+      println("no");
+      result[0] = false;
+
+
+    } catch (Exception ex) {
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+    try {
+
+    } catch (Exception ex) {
+      println("no");
+      result[0] = false;
+
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+
+    } catch (Exception ex) {
+      boolean acceptable = false;
+      String msg;
+      if (ex.getMessage() == null) {
+
+    } catch (Exception ex) {
+      throw new Error("Problem determining ZeroR performance: "
+        + ex.getMessage());
+    }
+ 
+ Fichier : CheckSource.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Classifier.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ConditionalDensityEstimator.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : CostMatrix.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+          } catch (Exception ex) {
+            val = null;
+          }
+          if (val == null) {
+
+        } catch (NumberFormatException e) {
+          // must be an expression
+          result.setCell(rows, cols, current);
+        }
+ 
+ Fichier : AbstractEvaluationMetric.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+        } catch (Exception ex) {
+          ex.printStackTrace();
+        }
+      }
+ 
+ Fichier : AggregateableEvaluation.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ConfusionMatrix.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : CostCurve.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+  }
+ 
+ Fichier : Evaluation.java
+ nombres Exeptions : 12
+ les exception sont : 
+
+    } catch (Exception e) {
+      throw new Exception("Can't find class with name " + classifierString
+        + '.');
+    }
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+      System.err.println(ex.getMessage());
+    }
+
+        } catch (IllegalArgumentException ex) {
+          success = false;
+        }
+        if (!success) {
+
+      } catch (Exception e) {
+        throw new Exception("Can't open file " + e.getMessage() + '.');
+      }
+      if (testSetPresent) {
+
+    } catch (Exception e) {
+      throw new Exception("\nWeka exception: " + e.getMessage()
+        + makeOptionString(classifier, false));
+    }
+
+        } catch (Exception ex) {
+          // don't make a fuss
+        }
+        if (savedStructure != null) {
+
+      } catch (Exception e) {
+        throw new Exception("Can't open file " + e.getMessage() + '.');
+      }
+      try {
+
+      } catch (Exception ex) {
+        try {
+          // Now try as the poxy old format :-)
+          // System.err.println("Attempting to read old format cost file");
+
+          } catch (Exception e) {
+            throw new Exception("Can't open file " + e.getMessage() + '.');
+          }
+          CostMatrix costMatrix = new CostMatrix(numClasses);
+
+        } catch (Exception e2) {
+          // re-throw the original exception
+          // System.err.println("Re-throwing original exception");
+          throw ex;
+
+    } catch (Exception ex) {
+      // Should never occur since the class is known to be nominal
+      // here
+      System.err.println("Arggh - Must be a bug in Evaluation class");
+
+      } catch (Exception ex) {
+        // quietly ignore
+      }
+    }
+ 
+ Fichier : EvaluationMetricHelper.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : EvaluationUtils.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : InformationRetrievalEvaluationMetric.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : InformationTheoreticEvaluationMetric.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : IntervalBasedEvaluationMetric.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : MarginCurve.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+  }
+ 
+ Fichier : NominalPrediction.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NumericPrediction.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : AbstractOutput.java
+ nombres Exeptions : 4
+ les exception sont : 
+
+      throw new WekaException(error);
+    }
+
+    doPrintClassification(classifier.distributionForInstance(inst), preProcessInstance(inst, classifier), index);
+
+      throw new WekaException(error);
+    }
+
+    doPrintClassification(dist, inst, index);
+
+        } catch (Exception e) {
+          throw new IllegalArgumentException("AbstractOutput: header of test set does not match.");
+        }
+        if (!(test.equalHeaders(m_Header))) {
+
+        } catch (Exception e) {
+          throw new IllegalArgumentException("AbstractOutput: header of test set does not match.");
+        }
+        if (!(test.equalHeaders(m_Header))) {
+
+      throw new WekaException(error);
+    }
+
+    doPrintFooter();
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    }
+
+    } catch (Exception e) {
+      result = null;
+    }
+
+ 
+ Fichier : CSV.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : HTML.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Null.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : PlainText.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : XML.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Prediction.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RegressionAnalysis.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : StandardEvaluationMetric.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ThresholdCurve.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+  }
+ 
+ Fichier : ThresholdProducingMetric.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : TwoClassStats.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Evaluation.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+      System.err.println(ex.getMessage());
+    }
+ 
+ Fichier : GaussianProcesses.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      return "Can't print the classifier.";
+    }
+
+ 
+ Fichier : LinearRegression.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+    } catch (Exception e) {
+      return "Can't print Linear Regression!";
+    }
+  }
+
+        } catch (Exception ex) {
+          for (int i = 0; i < numAttributes; i++) {
+            aTa.add(i, i, -ridge);
+          }
+ 
+ Fichier : Logistic.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : MultilayerPerceptron.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (InterruptedException e) {
+      }
+    } else {
+      notifyAll();
+ 
+ Fichier : LinearUnit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NeuralConnection.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NeuralMethod.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NeuralNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SigmoidUnit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SGD.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SGDText.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SimpleLinearRegression.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SimpleLogistic.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SMO.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+      } catch (Exception e) {
+        e.printStackTrace();
+
+        return "Can't print BinarySMO classifier.";
+
+    } catch (Exception e) {
+      return "Can't print SMO classifier.";
+    }
+
+ 
+ Fichier : SMOreg.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    catch (Exception e) {
+      return "Can't print SMVreg classifier.";
+    }
+    
+ 
+ Fichier : CachedKernel.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : CheckKernel.java
+ nombres Exeptions : 8
+ les exception sont : 
+
+    } catch (Exception ex) {
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+    try {
+
+    } catch (Exception ex) {
+      println("no");
+      result[0] = false;
+
+
+    } catch (Exception ex) {
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+    try {
+
+    } catch (Exception ex) {
+      println("no");
+      result[0] = false;
+
+
+    } catch (Exception ex) {
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+    try {
+
+    } catch (Exception ex) {
+      println("no");
+      result[0] = false;
+
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+      throw new Error("Error setting up for tests: " + ex.getMessage());
+    }
+
+    } catch (Exception ex) {
+      boolean acceptable = false;
+      String msg;
+      if (ex.getMessage() == null) {
+ 
+ Fichier : Kernel.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : KernelEvaluation.java
+ nombres Exeptions : 3
+ les exception sont : 
+
+    } catch (Exception e) {
+      throw new Exception("\nWeka exception: " + e.getMessage() + "\n"
+        + makeOptionString(Kernel));
+    }
+
+    } catch (Exception e) {
+      throw new Exception("Can't find class with name " + kernelString + '.');
+    }
+
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+      System.err.println(ex.getMessage());
+    }
+ 
+ Fichier : NormalizedPolyKernel.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : PolyKernel.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : PrecomputedKernelMatrixKernel.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      System.err.println("Problem reading matrix from " + m_KernelMatrixFile);
+    }
+    m_Counter++;
+ 
+ Fichier : Puk.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RBFKernel.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RegOptimizer.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RegSMO.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RegSMOImproved.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SMOset.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : StringKernel.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : VotedPerceptron.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : IntervalEstimator.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : IteratedSingleClassifierEnhancer.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : IterativeClassifier.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : IBk.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+      } catch (Exception ex) {
+        throw new Error("Data has no class attribute!");
+      }
+      total += weight;      
+
+    } catch (Exception ex) {
+      throw new Error("Couldn't optimize by cross-validation: "
+		      +ex.getMessage());
+    }
+ 
+ Fichier : KStarCache.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : KStarConstants.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : KStarNominalAttribute.java
+ nombres Exeptions : 3
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    }
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+    if ((int) test.value(col) == (int) train.value(col)) {
+ 
+ Fichier : KStarNumericAttribute.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+ 
+ Fichier : KStarWrapper.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : KStar.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+    } catch(Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+      } catch (Exception ex) {
+	ex.printStackTrace();
+      }
+    }
+ 
+ Fichier : LWL.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : AdaBoostM1.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : AdditiveRegression.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : AttributeSelectedClassifier.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Bagging.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ClassificationViaRegression.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : CostSensitiveClassifier.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (Exception ex) {
+	// now flag as possible old format cost matrix. Delay cost matrix
+	// loading until buildClassifer is called
+	setCostMatrix(null);
+ 
+ Fichier : CVParameterSelection.java
+ nombres Exeptions : 6
+ les exception sont : 
+
+      } catch (NumberFormatException n) {
+        m_ParamChar = parts[0];
+      }
+      
+
+      } catch (NumberFormatException n) {
+        throw new Exception("CVParameter " + param 
+            + ": Numeric lower bound expected");
+      }
+
+        } catch (NumberFormatException n) {
+          throw new Exception("CVParameter " + param 
+              + ": Upper bound must be numeric, or 'A' or 'N'");
+        }
+
+      } catch (NumberFormatException n) {
+        throw new Exception("CVParameter " + param 
+            + ": Numeric number of steps expected");
+      }
+
+          catch(Exception ex) { m_CVParams = backup; throw ex; }
+      }
+  }
+
+
+    } catch (Exception ex) {
+      result += ex.getMessage();
+    }
+    result += "Classifier Options: "
+ 
+ Fichier : FilteredClassifier.java
+ nombres Exeptions : 0
+ les exception sont : 
+
+        throw new WekaException(
+          "FilteredClassifier: filter has returned more/less instances than required.");
+      }
+      return ((BatchPredictor) getClassifier())
+ 
+ Fichier : IterativeClassifierOptimizer.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (Exception e) {
+        System.out.println("Classifiers could not be generated.");
+        e.printStackTrace();
+      }
+ 
+ Fichier : LogitBoost.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      System.out.println("Predictions could not be generated.");
+      e.printStackTrace();
+    }
+ 
+ Fichier : MultiClassClassifier.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : MultiClassClassifierUpdateable.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+        } catch (IllegalArgumentException ex) {
+        }
+      }
+      if (Utils.gr(Utils.sum(probs), 0)) {
+ 
+ Fichier : MultiScheme.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RandomCommittee.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RandomizableFilteredClassifier.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+      System.exit(1);
+    }
+ 
+ Fichier : RandomSubSpace.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RegressionByDiscretization.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Stacking.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Vote.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    }
+
+        } catch (Exception ex) {
+        }
+      }
+
+ 
+ Fichier : WeightedInstancesHandlerWrapper.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : InputMappedClassifier.java
+ nombres Exeptions : 4
+ les exception sont : 
+
+      } catch (Exception ex) {
+        // ignore any problems
+      }
+
+
+      } catch (Exception ex) {
+        ex.printStackTrace();
+      }
+    }
+
+    } catch (Exception ex) {
+      return "[InputMappedClassifier] Problem loading model.";
+    }
+
+
+      } catch (Exception ex) {
+        ex.printStackTrace();
+        return "[InputMappedClassifier] Problem loading model.";
+      }
+ 
+ Fichier : InputMappedClassifierBeanInfo.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
+    return null;
+ 
+ Fichier : SerializedClassifier.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+      } catch (Exception e) {
+        throw new IllegalArgumentException("Cannot load model from file '"
+          + value + "': " + e);
+      }
+
+      } catch (Exception e) {
+        System.err.println(e);
+      }
+    }
+ 
+ Fichier : MultipleClassifiersCombiner.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ParallelIteratedSingleClassifierEnhancer.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+            } catch (Throwable ex) {
+              ex.printStackTrace();
+              numFailed.incrementAndGet();
+              if (m_Debug) {
+ 
+ Fichier : ParallelMultipleClassifiersCombiner.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+      } catch (InterruptedException ex) {
+      }
+    } else {
+      notifyAll();
+
+            } catch (Exception ex) {
+              ex.printStackTrace();
+              completedClassifier(iteration, false);
+            }
+ 
+ Fichier : GeneralRegression.java
+ nombres Exeptions : 8
+ les exception sont : 
+
+        } catch (IllegalArgumentException ex) {
+          throw new Exception("[GeneralRegression] unable to parse the link parameter");
+        }
+      }
+
+        } catch (IllegalArgumentException ex) {
+          throw new Exception("[GeneralRegression] unable to parse the trials value"); 
+        }
+      }
+
+      } catch (IllegalArgumentException ex) {
+        throw new Exception("[GeneralRegression] unable to parse the distribution parameter");
+      }
+    }
+
+      } catch (IllegalArgumentException ex) {
+        throw new Exception("[GeneralRegression] unable to parse the offset value");
+      }
+    }
+
+              } catch (IllegalArgumentException ex) {
+                throw new Exception("[GeneralRegression] unable to parse PPCell value: "
+                                    + value);
+              }
+
+                  } catch (IllegalArgumentException ex) {
+                    throw new Exception("[GeneralRegresion] unable to parse PPCell value: "
+                                        + value);
+                  }
+
+        } catch (IllegalArgumentException ex) {
+          throw new Exception("[GeneralRegression] unable to parse beta value "
+                              + coefficient + " as a double from PCell");
+        }
+
+          } catch (IllegalArgumentException ex) {
+            throw new Exception("[GeneralRegression] unable to parse df value "
+                              + df + " as an int from PCell");
+          }
+ 
+ Fichier : NeuralNetwork.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : PMMLClassifier.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Regression.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+          } catch (IllegalArgumentException ex) {
+            throw new Exception("[PredictorTerm] unable to parse coefficient");
+          }
+        }
+ 
+ Fichier : RuleSetModel.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SupportVectorMachineModel.java
+ nombres Exeptions : 6
+ les exception sont : 
+
+        } catch (NumberFormatException e) {
+          String message = "[PolynomialKernel] : WARNING, can't parse "
+            + "gamma attribute. Using default value of 1.";
+          if (m_log == null) {
+
+        } catch (NumberFormatException e) {
+          String message = "[PolynomialKernel] : WARNING, can't parse "
+            + "coef0 attribute. Using default value of 1.";
+          if (m_log == null) {
+
+        } catch (NumberFormatException e) {
+          String message = "[PolynomialKernel] : WARNING, can't parse "
+            + "degree attribute. Using default value of 1.";
+          if (m_log == null) {
+
+        } catch (NumberFormatException e) {
+          String message = "[RadialBasisKernel] : WARNING, can't parse "
+            + "gamma attribute. Using default value of 1.";
+          if (m_log == null) {
+
+        } catch (NumberFormatException e) {
+          String message = "[SigmoidKernel] : WARNING, can't parse "
+            + "gamma attribute. Using default value of 1.";
+          if (m_log == null) {
+
+        } catch (NumberFormatException e) {
+          String message = "[SigmoidKernel] : WARNING, can't parse "
+            + "coef0 attribute. Using default value of 1.";
+          if (m_log == null) {
+ 
+ Fichier : TreeModel.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+          } catch (NumberFormatException ex) {
+            throw new Exception(
+              "[TreeNode] class is numeric but unable to parse score "
+                + m_scoreString + " as a number!");
+
+      } catch (NumberFormatException ex) {
+        System.err.println("[TreeModel] WARNING: "
+          + "couldn't parse supplied missingValuePenalty as a number");
+      }
+ 
+ Fichier : AbstractPMMLProducerHelper.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : LogisticProducerHelper.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (JAXBException e) {
+      e.printStackTrace();
+    }
+    return "";
+ 
+ Fichier : RandomizableClassifier.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RandomizableIteratedSingleClassifierEnhancer.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RandomizableMultipleClassifiersCombiner.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RandomizableParallelIteratedSingleClassifierEnhancer.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RandomizableParallelMultipleClassifiersCombiner.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RandomizableSingleClassifierEnhancer.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : DecisionTable.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+            } catch (Exception ee) {
+              System.out.println(ee.getMessage());
+            }
+          } else {
+ 
+ Fichier : DecisionTableHashKey.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : JRip.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      System.err.println(e.getMessage());
+      e.printStackTrace();
+    }
+ 
+ Fichier : M5Rules.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : OneR.java
+ nombres Exeptions : 2
+ les exception sont : 
+
+import weka.core.WekaException;
+
+/**
+ * <!-- globalinfo-start --> Class for building and using a 1R classifier; in
+
+      } catch (Exception e) {
+        return "Can't print OneR classifier!";
+      }
+    }
+
+      } catch (Exception ex) {
+      }
+    }
+
+
+      throw new WekaException("No attributes found to work with!");
+    }
+  }
+
+ 
+ Fichier : C45PruneableDecList.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ClassifierDecList.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      return "Can't print rule.";
+    }
+  }
+ 
+ Fichier : MakeDecList.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : PruneableDecList.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : PART.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Rule.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RuleStats.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ZeroR.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SingleClassifierEnhancer.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Sourcable.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : DecisionStump.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      return "Can't print decision stump classifier!";
+    }
+  }
+ 
+ Fichier : HoeffdingTree.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ActiveHNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ConditionalSufficientStats.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : GaussianConditionalSufficientStats.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : GiniSplitMetric.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : HNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : InactiveHNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : InfoGainSplitMetric.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : LeafNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : LearningNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NBNode.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+ 
+ Fichier : NBNodeAdaptive.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NominalConditionalSufficientStats.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Split.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SplitCandidate.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SplitMetric.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SplitNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : UnivariateNominalMultiwaySplit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : UnivariateNumericBinarySplit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : WeightMass.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : BinC45ModelSelection.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+ 
+ Fichier : BinC45Split.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : C45ModelSelection.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+ 
+ Fichier : C45PruneableClassifierTree.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : C45Split.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ClassifierSplitModel.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (CloneNotSupportedException e) {
+    } 
+    return clone;
+  }
+ 
+ Fichier : ClassifierTree.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      return "Can't print classification tree.";
+    }
+  }
+ 
+ Fichier : Distribution.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : EntropyBasedSplitCrit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : EntropySplitCrit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : GainRatioSplitCrit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : InfoGainSplitCrit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ModelSelection.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NBTreeClassifierTree.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+      return "Can't print nb tree.";
+    }
+ 
+ Fichier : NBTreeModelSelection.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+ 
+ Fichier : NBTreeNoSplit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : NBTreeSplit.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+          } catch (Exception ex) {
+            ex.printStackTrace();
+            System.err.println("*** " + m_complexityIndex);
+            System.err.println(weights.length);
+ 
+ Fichier : NoSplit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : PruneableClassifierTree.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SplitCriterion.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Stats.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : J48.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : LMTNode.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+    } catch (Exception e) {
+      return "Can't print logistic model tree";
+    }
+
+ 
+ Fichier : LogisticBase.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ResidualModelSelection.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : ResidualSplit.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SimpleLinearRegression.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : LMT.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : CorrelationSplitInfo.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Impurity.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : M5Base.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (Exception e) {
+        cont = true;
+      }
+
+ 
+ Fichier : PreConstructedLinearModel.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Rule.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (Exception e) {
+        return "Can't print rule";
+      }
+    }
+ 
+ Fichier : RuleNode.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : SplitEvaluate.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : Values.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : YongSplitInfo.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : M5P.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : RandomForest.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+import weka.core.WekaException;
+import weka.gui.ProgrammaticProperty;
+
+import java.util.Collections;
+
+      } catch (WekaException ex) {
+
+      } catch (WekaException ex) {
+        // ignore
+      }
+
+    double[] nodeCounts) throws WekaException {
+
+    if (m_Classifiers == null) {
+      throw new WekaException("Classifier has not been built yet!");
+
+      throw new WekaException("Classifier has not been built yet!");
+
+      throw new WekaException("Stats for attribute importance have not "
+        + "been collected!");
+    }
+
+ 
+ Fichier : RandomTree.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (Exception e) {
+        e.printStackTrace();
+        return "RandomTree: tree can't be printed";
+      }
+ 
+ Fichier : REPTree.java
+ nombres Exeptions : 1
+ les exception sont : 
+
+      } catch (Exception e) {
+        e.printStackTrace();
+        return "Decision tree: tree can't be printed";
+      }
+ 
+ Fichier : UpdateableBatchProcessor.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : UpdateableClassifier.java
+ nombres Exeptions : 0
+ les exception sont : 
+ 
+ Fichier : XMLClassifier.java
+ nombres Exeptions : 0
+ les exception sont : 
