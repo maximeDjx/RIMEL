@@ -1,17 +1,27 @@
 package rimel.appliwekaExecption;
 
-import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 
 public class exeption {
     static ArrayList<String> myExecption = new ArrayList<>();
-    static int cpt = 0;
+    static int nbError = 0;
+    static int nbWekaExecption = 0;
+    static int nbJavaExeption =0;
     static BufferedWriter writer;
-    public exeption() throws IOException {
-        writer = new BufferedWriter(new FileWriter(new File( "C:\\Users\\chennouf\\Desktop\\RIMEL\\exceptionWeka\\src\\main\\java\\rimel\\results\\result.txt"))); // a changer avec votre Path
+    static JSONObject obj;
+    static JSONArray execptionsFiles;
 
+    public exeption() throws IOException {
+        writer = new BufferedWriter(new FileWriter(new File( "C:\\Users\\chennouf\\Desktop\\RIMEL\\exceptionWeka\\src\\main\\java\\rimel\\results\\result.json"))); // a changer avec votre Path
+        obj = new JSONObject();
+        execptionsFiles = new JSONArray();
     }
 
 
@@ -19,6 +29,12 @@ public class exeption {
     public static void main(String[] args) throws IOException {  // TODO Lire plus algo en parcourant un repertoire
         exeption exep = new exeption();
         parcourirRepertoire("C:\\Users\\chennouf\\Desktop\\RIMEL\\exceptionWeka\\classifiers"); // a changer avec votre Path
+        obj.put("nbExecptionsTotal",nbError );
+        obj.put("nbExecptionsWeka", nbWekaExecption);
+        obj.put("nbExecptionsJava", nbJavaExeption);
+        obj.put("myDataExecptions", execptionsFiles);
+
+        writer.write(obj.toJSONString());
         writer.close();
     }
 
@@ -52,6 +68,8 @@ public class exeption {
 
                 if (ligne.contains("catch"))
                 {
+                    nbError++;
+                    nbJavaExeption++;
                     compteur++;
                     nbTrouves++;
                     myExecption.add("\n"+ligne);
@@ -59,6 +77,8 @@ public class exeption {
 
                 if (ligne.contains("WekaException"))
                 {
+                    nbError++;
+                    nbWekaExecption++;
                     myExecption.add("\n"+ligne);
                     compteur++;
                 }
@@ -78,21 +98,19 @@ public class exeption {
 
 
     public static void write(String fileName,String path){
-        try {
-            //String new fileName = fileName.substring(0,chemin.lenght-1);)
-            writer.write("\n \n Fichier : " + fileName);
-            writer.write("\n nombres Exeptions : " + CountExeption(path));
-            writer.write("\n les exception sont : ");
-            for(int i=0;i<myExecption.size();i++){
-                writer.write( "\n"+myExecption.get(i));
-            }
-            //writer.close();
-            cpt++;
+
+        JSONObject objFile = new JSONObject();
+        JSONArray dataExceptions = new JSONArray();
+
+        for(int i=0;i<myExecption.size();i++){
+            dataExceptions.add(myExecption.get(i));
         }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+
+        objFile.put("Fichier",fileName);
+        objFile.put("nbExeptions",CountExeption(path));
+        objFile.put("dataExceptions", dataExceptions );
+        execptionsFiles.add(objFile);
+
     }
 
 

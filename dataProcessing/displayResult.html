@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<body>
+
+    <h1>Analyse des exceptions erreur du repertoire "classifiers" de Weka</h1>
+    <div id="nbErreur"></div>
+    <div id="nbErreurWeka"></div>
+    <div id="nbErreurJava"></div>
+    <div id="piechart"></div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+
+        var jsonData
+
+        readTextFile("/result");
+        function readTextFile(file) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function () {
+                if (rawFile.readyState === 4) {
+                    if (rawFile.status === 200 || rawFile.status == 0) {
+                        var jsonData = JSON.parse(rawFile.responseText);
+                        console.log(jsonData);
+                        document.getElementById("nbErreur").innerHTML = "Nombre erreur: " + jsonData.nbExecptionsTotal;
+                        document.getElementById("nbErreurWeka").innerHTML = "Nombre erreur de la class WekaException: " + jsonData.nbExecptionsWeka;
+                        document.getElementById("nbErreurJava").innerHTML = "Nombre erreur Java: " + jsonData.nbExecptionsJava;
+                        // Load google charts
+                        google.charts.load('current', { 'packages': ['corechart'] });
+                        google.charts.setOnLoadCallback(drawChart);
+                        // Draw the chart and set the chart values
+                        function drawChart() {
+                            var data = google.visualization.arrayToDataTable([
+                                ['Task', 'Hours per Day'],
+                                ['JavaException', jsonData.nbExecptionsJava],
+                                ['WekaException', jsonData.nbExecptionsWeka]
+                            ]);
+
+                            // Optional; add a title and set the width and height of the chart
+                            var options = { 'title': 'Exception dans classifiers', 'width': 550, 'height': 400 };
+
+                            // Display the chart inside the <div> element with id="piechart"
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                            chart.draw(data, options);
+                        }
+                    }
+                }
+            }
+            rawFile.send(null);
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
