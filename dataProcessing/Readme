@@ -1,0 +1,5 @@
+ajouter la lib node avec : npm install 
+puis lancer l'app avec : node server
+
+le resultat est sur : http://localhost:8005
+
