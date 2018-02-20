@@ -72,13 +72,24 @@
                             }
                         }
 
+                        function isExceptionGenerique(text) {
+                            if(text.includes("Exception e")){
+                                return true;
+                            }else if(text.includes("Throwable t")){
+                                return true;
+                            }else{
+                                return false;
+                            }
+                        }
 
-                        var myTableau = {"Precondition_Arithmetic":0,"Precondition_Format":0,"Argument_illégal":0}
+
+                        var myTableau = {"Precondition_Arithmetic":0,"Precondition_Format":0,"Argument_illégal":0,"Exeption_Generique":0}
                     
                         function createTableau(){
                             var nbArithme = 0;
                             var nbIllegalArg = 0;
                             var nbFormat = 0;
+                            var nbGeneriqueExe = 0;
                             //var autre = 0;
 
                             jsonData.myDataExecptions.forEach(function (item) {
@@ -89,12 +100,15 @@
                                             nbFormat++;
                                         }else if(isIllegalArgumentException(myExeption)){
                                             nbIllegalArg++;
+                                        }else if(isExceptionGenerique(myExeption)){
+                                            nbGeneriqueExe++;
                                         }
                                 });
                             });
                             myTableau.Precondition_Arithmetic = nbArithme;
                             myTableau.Precondition_Format = nbFormat;
                             myTableau.Argument_illégal = nbIllegalArg; 
+                            myTableau.Exeption_Generique = nbGeneriqueExe;
                         }
 
                         createTableau();
@@ -105,8 +119,8 @@
                                 ['Task', 'Preconditions'],
                                 ['Precondition Arithmetic', myTableau.Precondition_Arithmetic],
                                 ['Precondition Format', myTableau.Precondition_Format],
-                                ['Argument illégal', myTableau.Argument_illégal]
-                                
+                                ['Argument illégal', myTableau.Argument_illégal],
+                                ['Precondition non exploitable', myTableau.Exeption_Generique]
                             ]);
 
                             // Optional; add a title and set the width and height of the chart
