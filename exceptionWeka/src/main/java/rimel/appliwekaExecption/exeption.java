@@ -100,15 +100,11 @@ public class exeption {
     public static void write(String fileName,String path){
 
         JSONObject objFile = new JSONObject();
-        JSONArray dataExceptions = new JSONArray();
 
-        for(int i=0;i<myExecption.size();i++){
-            dataExceptions.add(myExecption.get(i));
-        }
 
         objFile.put("Fichier",fileName);
         objFile.put("nbExeptions",CountExeption(path));
-        objFile.put("dataExceptions", dataExceptions );
+        objFile.put("dataExceptions", myExecption );
         execptionsFiles.add(objFile);
 
     }

@@ -5,11 +5,6 @@
     "myDataExecptions": [
         {
             "nbExeptions": 2,
-            "dataExceptions": [],
-            "Fichier": "AbstractClassifier.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      if (((e.getMessage() != null)",
@@ -20,15 +15,15 @@
                 "      }",
                 "    }"
             ],
+            "Fichier": "AbstractClassifier.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "AggregateableEvaluation.java"
         },
         {
             "nbExeptions": 6,
-            "dataExceptions": [],
-            "Fichier": "BayesNet.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Throwable t) {",
                 "      m_otherBayesNet = null;",
@@ -55,16 +50,21 @@
                 "    }",
                 "  } \/\/ measureEntropyScore"
             ],
-            "Fichier": "NaiveBayes.java"
+            "Fichier": "BayesNet.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n      } catch (Exception ex) {",
                 "        text.append(ex.getMessage());",
                 "      }",
                 "    }"
             ],
+            "Fichier": "NaiveBayes.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "NaiveBayesMultinomial.java"
         },
         {
@@ -84,31 +84,26 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "ADNode.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Throwable t) {",
                 "      t.printStackTrace();",
                 "    }",
                 "  } \/\/ main"
             ],
-            "Fichier": "BayesNetGenerator.java"
+            "Fichier": "ADNode.java"
         },
         {
-            "nbExeptions": 6,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
                 "      printOptions(b);",
                 "    }"
             ],
-            "Fichier": "BIFReader.java"
+            "Fichier": "BayesNetGenerator.java"
         },
         {
-            "nbExeptions": 39,
+            "nbExeptions": 6,
             "dataExceptions": [
                 "\n          } catch (NumberFormatException e) {",
                 "            System.err.println(\"Wrong number format in position :(\" + sX + \",\"",
@@ -135,10 +130,10 @@
                 "    }",
                 "  } \/\/ main"
             ],
-            "Fichier": "EditableBayesNet.java"
+            "Fichier": "BIFReader.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 39,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
@@ -297,6 +292,11 @@
                 "      }",
                 "    } \/\/ redo"
             ],
+            "Fichier": "EditableBayesNet.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "BayesNetEstimator.java"
         },
         {
@@ -306,7 +306,12 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
+            "dataExceptions": [
+                "\n    } catch (Exception e) {",
+                "      System.out.println(e.getMessage());",
+                "    } ",
+                "  }    \/\/ main"
+            ],
             "Fichier": "DiscreteEstimatorBayes.java"
         },
         {
@@ -321,31 +326,21 @@
         },
         {
             "nbExeptions": 0,
-            "dataExceptions": [
-                "\n    } catch (Exception e) {",
-                "      System.out.println(e.getMessage());",
-                "    } ",
-                "  }    \/\/ main"
-            ],
+            "dataExceptions": [],
             "Fichier": "MultiNomialBMAEstimator.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "SimpleEstimator.java"
-        },
-        {
-            "nbExeptions": 36,
             "dataExceptions": [
                 "\n    } catch (IllegalArgumentException ex) {",
                 "      return new double[nNumClasses]; \/\/ predict missing value",
                 "    }",
                 ""
             ],
-            "Fichier": "GUI.java"
+            "Fichier": "SimpleEstimator.java"
         },
         {
-            "nbExeptions": 1,
+            "nbExeptions": 36,
             "dataExceptions": [
                 "\n            } catch (Exception e) {",
                 "              e.printStackTrace();",
@@ -488,16 +483,21 @@
                 "      } catch (BIFFormatException bf) {",
                 "\n      } catch (BIFFormatException bf) {"
             ],
-            "Fichier": "MarginCalculator.java"
+            "Fichier": "GUI.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
                 "    }",
                 "  } \/\/ main"
             ],
+            "Fichier": "MarginCalculator.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "ParentSet.java"
         },
         {
@@ -507,17 +507,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "ICSSearchAlgorithm.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
                 "    }",
                 "  } \/\/ main"
             ],
+            "Fichier": "ICSSearchAlgorithm.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "FromFile.java"
         },
         {
@@ -527,17 +527,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "GeneticSearch.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n      } catch (Exception e) {",
                 "        \/\/ ignore",
                 "      }",
                 "    } \/\/ calcScore"
             ],
+            "Fichier": "GeneticSearch.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "GlobalScoreSearchAlgorithm.java"
         },
         {
@@ -632,11 +632,6 @@
         },
         {
             "nbExeptions": 2,
-            "dataExceptions": [],
-            "Fichier": "BVDecompose.java"
-        },
-        {
-            "nbExeptions": 2,
             "dataExceptions": [
                 "\n      } catch (Exception ex) {",
                 "        String result = ex.getMessage() + \"\\nBVDecompose Options:\\n\\n\";",
@@ -647,10 +642,10 @@
                 "    }",
                 "  }"
             ],
-            "Fichier": "BVDecomposeSegCVSub.java"
+            "Fichier": "BVDecompose.java"
         },
         {
-            "nbExeptions": 14,
+            "nbExeptions": 2,
             "dataExceptions": [
                 "\n            } catch (Exception ex) {",
                 "                String result = ex.getMessage() + \"\\nBVDecompose Options:\\n\\n\";",
@@ -661,10 +656,10 @@
                 "        }",
                 ""
             ],
-            "Fichier": "CheckClassifier.java"
+            "Fichier": "BVDecomposeSegCVSub.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 14,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      result[0] = false;",
@@ -723,6 +718,11 @@
                 "        + ex.getMessage());",
                 "    }"
             ],
+            "Fichier": "CheckClassifier.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "CheckSource.java"
         },
         {
@@ -737,11 +737,6 @@
         },
         {
             "nbExeptions": 2,
-            "dataExceptions": [],
-            "Fichier": "CostMatrix.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\n          } catch (Exception ex) {",
                 "            val = null;",
@@ -752,16 +747,21 @@
                 "          result.setCell(rows, cols, current);",
                 "        }"
             ],
-            "Fichier": "AbstractEvaluationMetric.java"
+            "Fichier": "CostMatrix.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n        } catch (Exception ex) {",
                 "          ex.printStackTrace();",
                 "        }",
                 "      }"
             ],
+            "Fichier": "AbstractEvaluationMetric.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "AggregateableEvaluation.java"
         },
         {
@@ -771,21 +771,16 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "CostCurve.java"
-        },
-        {
-            "nbExeptions": 12,
             "dataExceptions": [
                 "\n    } catch (Exception ex) {",
                 "      ex.printStackTrace();",
                 "    }",
                 "  }"
             ],
-            "Fichier": "Evaluation.java"
+            "Fichier": "CostCurve.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 12,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      throw new Exception(\"Can't find class with name \" + classifierString",
@@ -836,6 +831,11 @@
                 "      }",
                 "    }"
             ],
+            "Fichier": "Evaluation.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "EvaluationMetricHelper.java"
         },
         {
@@ -860,17 +860,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "MarginCurve.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception ex) {",
                 "      ex.printStackTrace();",
                 "    }",
                 "  }"
             ],
+            "Fichier": "MarginCurve.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "NominalPrediction.java"
         },
         {
@@ -880,11 +880,6 @@
         },
         {
             "nbExeptions": 4,
-            "dataExceptions": [],
-            "Fichier": "AbstractOutput.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n      throw new WekaException(error);",
                 "    }",
@@ -915,6 +910,11 @@
                 "    }",
                 ""
             ],
+            "Fichier": "AbstractOutput.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "CSV.java"
         },
         {
@@ -954,17 +954,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "ThresholdCurve.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception ex) {",
                 "      ex.printStackTrace();",
                 "    }",
                 "  }"
             ],
+            "Fichier": "ThresholdCurve.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "ThresholdProducingMetric.java"
         },
         {
@@ -974,31 +974,26 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "Evaluation.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception ex) {",
                 "      ex.printStackTrace();",
                 "      System.err.println(ex.getMessage());",
                 "    }"
             ],
-            "Fichier": "GaussianProcesses.java"
+            "Fichier": "Evaluation.java"
         },
         {
-            "nbExeptions": 2,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      return \"Can't print the classifier.\";",
                 "    }",
                 ""
             ],
-            "Fichier": "LinearRegression.java"
+            "Fichier": "GaussianProcesses.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 2,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      return \"Can't print Linear Regression!\";",
@@ -1009,21 +1004,26 @@
                 "            aTa.add(i, i, -ridge);",
                 "          }"
             ],
+            "Fichier": "LinearRegression.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "Logistic.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "MultilayerPerceptron.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n      } catch (InterruptedException e) {",
                 "      }",
                 "    } else {",
                 "      notifyAll();"
             ],
+            "Fichier": "MultilayerPerceptron.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "LinearUnit.java"
         },
         {
@@ -1068,11 +1068,6 @@
         },
         {
             "nbExeptions": 2,
-            "dataExceptions": [],
-            "Fichier": "SMO.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\n      } catch (Exception e) {",
                 "        e.printStackTrace();",
@@ -1083,25 +1078,25 @@
                 "    }",
                 ""
             ],
-            "Fichier": "SMOreg.java"
+            "Fichier": "SMO.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    catch (Exception e) {",
                 "      return \"Can't print SMVreg classifier.\";",
                 "    }",
                 "    "
             ],
+            "Fichier": "SMOreg.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "CachedKernel.java"
         },
         {
             "nbExeptions": 8,
-            "dataExceptions": [],
-            "Fichier": "CheckKernel.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception ex) {",
                 "      throw new Error(\"Error setting up for tests: \" + ex.getMessage());",
@@ -1136,15 +1131,15 @@
                 "      String msg;",
                 "      if (ex.getMessage() == null) {"
             ],
+            "Fichier": "CheckKernel.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "Kernel.java"
         },
         {
             "nbExeptions": 3,
-            "dataExceptions": [],
-            "Fichier": "KernelEvaluation.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      throw new Exception(\"\\nWeka exception: \" + e.getMessage() + \"\\n\"",
@@ -1159,6 +1154,11 @@
                 "      System.err.println(ex.getMessage());",
                 "    }"
             ],
+            "Fichier": "KernelEvaluation.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "NormalizedPolyKernel.java"
         },
         {
@@ -1168,17 +1168,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "PrecomputedKernelMatrixKernel.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      System.err.println(\"Problem reading matrix from \" + m_KernelMatrixFile);",
                 "    }",
                 "    m_Counter++;"
             ],
+            "Fichier": "PrecomputedKernelMatrixKernel.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "Puk.java"
         },
         {
@@ -1233,11 +1233,6 @@
         },
         {
             "nbExeptions": 2,
-            "dataExceptions": [],
-            "Fichier": "IBk.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n      } catch (Exception ex) {",
                 "        throw new Error(\"Data has no class attribute!\");",
@@ -1248,6 +1243,11 @@
                 "\t\t      +ex.getMessage());",
                 "    }"
             ],
+            "Fichier": "IBk.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "KStarCache.java"
         },
         {
@@ -1257,11 +1257,6 @@
         },
         {
             "nbExeptions": 3,
-            "dataExceptions": [],
-            "Fichier": "KStarNominalAttribute.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
@@ -1276,25 +1271,25 @@
                 "    }",
                 "    if ((int) test.value(col) == (int) train.value(col)) {"
             ],
-            "Fichier": "KStarNumericAttribute.java"
+            "Fichier": "KStarNominalAttribute.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
                 "    }",
                 "  }"
             ],
+            "Fichier": "KStarNumericAttribute.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "KStarWrapper.java"
         },
         {
             "nbExeptions": 2,
-            "dataExceptions": [],
-            "Fichier": "KStar.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch(Exception e) {",
                 "      e.printStackTrace();",
@@ -1305,6 +1300,11 @@
                 "      }",
                 "    }"
             ],
+            "Fichier": "KStar.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "LWL.java"
         },
         {
@@ -1334,21 +1334,16 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "CostSensitiveClassifier.java"
-        },
-        {
-            "nbExeptions": 6,
             "dataExceptions": [
                 "\n      } catch (Exception ex) {",
                 "\t\/\/ now flag as possible old format cost matrix. Delay cost matrix",
                 "\t\/\/ loading until buildClassifer is called",
                 "\tsetCostMatrix(null);"
             ],
-            "Fichier": "CVParameterSelection.java"
+            "Fichier": "CostSensitiveClassifier.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 6,
             "dataExceptions": [
                 "\n      } catch (NumberFormatException n) {",
                 "        m_ParamChar = parts[0];",
@@ -1375,17 +1370,17 @@
                 "    }",
                 "    result += \"Classifier Options: \""
             ],
-            "Fichier": "FilteredClassifier.java"
+            "Fichier": "CVParameterSelection.java"
         },
         {
-            "nbExeptions": 1,
+            "nbExeptions": 0,
             "dataExceptions": [
                 "\n        throw new WekaException(",
                 "          \"FilteredClassifier: filter has returned more\/less instances than required.\");",
                 "      }",
                 "      return ((BatchPredictor) getClassifier())"
             ],
-            "Fichier": "IterativeClassifierOptimizer.java"
+            "Fichier": "FilteredClassifier.java"
         },
         {
             "nbExeptions": 1,
@@ -1395,31 +1390,36 @@
                 "        e.printStackTrace();",
                 "      }"
             ],
-            "Fichier": "LogitBoost.java"
+            "Fichier": "IterativeClassifierOptimizer.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      System.out.println(\"Predictions could not be generated.\");",
                 "      e.printStackTrace();",
                 "    }"
             ],
+            "Fichier": "LogitBoost.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "MultiClassClassifier.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "MultiClassClassifierUpdateable.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n        } catch (IllegalArgumentException ex) {",
                 "        }",
                 "      }",
                 "      if (Utils.gr(Utils.sum(probs), 0)) {"
             ],
+            "Fichier": "MultiClassClassifierUpdateable.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "MultiScheme.java"
         },
         {
@@ -1429,17 +1429,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "RandomizableFilteredClassifier.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
                 "      System.exit(1);",
                 "    }"
             ],
+            "Fichier": "RandomizableFilteredClassifier.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "RandomSubSpace.java"
         },
         {
@@ -1454,11 +1454,6 @@
         },
         {
             "nbExeptions": 2,
-            "dataExceptions": [],
-            "Fichier": "Vote.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n      } catch (Exception e) {",
                 "        e.printStackTrace();",
@@ -1469,15 +1464,15 @@
                 "      }",
                 ""
             ],
+            "Fichier": "Vote.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "WeightedInstancesHandlerWrapper.java"
         },
         {
             "nbExeptions": 4,
-            "dataExceptions": [],
-            "Fichier": "InputMappedClassifier.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\n      } catch (Exception ex) {",
                 "        \/\/ ignore any problems",
@@ -1496,20 +1491,20 @@
                 "        return \"[InputMappedClassifier] Problem loading model.\";",
                 "      }"
             ],
-            "Fichier": "InputMappedClassifierBeanInfo.java"
+            "Fichier": "InputMappedClassifier.java"
         },
         {
-            "nbExeptions": 2,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception ex) {",
                 "      ex.printStackTrace();",
                 "    }",
                 "    return null;"
             ],
-            "Fichier": "SerializedClassifier.java"
+            "Fichier": "InputMappedClassifierBeanInfo.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 2,
             "dataExceptions": [
                 "\n      } catch (Exception e) {",
                 "        throw new IllegalArgumentException(\"Cannot load model from file '\"",
@@ -1520,25 +1515,25 @@
                 "      }",
                 "    }"
             ],
+            "Fichier": "SerializedClassifier.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "MultipleClassifiersCombiner.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "ParallelIteratedSingleClassifierEnhancer.java"
-        },
-        {
-            "nbExeptions": 2,
             "dataExceptions": [
                 "\n            } catch (Throwable ex) {",
                 "              ex.printStackTrace();",
                 "              numFailed.incrementAndGet();",
                 "              if (m_Debug) {"
             ],
-            "Fichier": "ParallelMultipleClassifiersCombiner.java"
+            "Fichier": "ParallelIteratedSingleClassifierEnhancer.java"
         },
         {
-            "nbExeptions": 8,
+            "nbExeptions": 2,
             "dataExceptions": [
                 "\n      } catch (InterruptedException ex) {",
                 "      }",
@@ -1549,10 +1544,10 @@
                 "              completedClassifier(iteration, false);",
                 "            }"
             ],
-            "Fichier": "GeneralRegression.java"
+            "Fichier": "ParallelMultipleClassifiersCombiner.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 8,
             "dataExceptions": [
                 "\n        } catch (IllegalArgumentException ex) {",
                 "          throw new Exception(\"[GeneralRegression] unable to parse the link parameter\");",
@@ -1587,6 +1582,11 @@
                 "                              + df + \" as an int from PCell\");",
                 "          }"
             ],
+            "Fichier": "GeneralRegression.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "NeuralNetwork.java"
         },
         {
@@ -1596,26 +1596,21 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "Regression.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n          } catch (IllegalArgumentException ex) {",
                 "            throw new Exception(\"[PredictorTerm] unable to parse coefficient\");",
                 "          }",
                 "        }"
             ],
+            "Fichier": "Regression.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "RuleSetModel.java"
         },
         {
             "nbExeptions": 6,
-            "dataExceptions": [],
-            "Fichier": "SupportVectorMachineModel.java"
-        },
-        {
-            "nbExeptions": 2,
             "dataExceptions": [
                 "\n        } catch (NumberFormatException e) {",
                 "          String message = \"[PolynomialKernel] : WARNING, can't parse \"",
@@ -1642,10 +1637,10 @@
                 "            + \"coef0 attribute. Using default value of 1.\";",
                 "          if (m_log == null) {"
             ],
-            "Fichier": "TreeModel.java"
+            "Fichier": "SupportVectorMachineModel.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 2,
             "dataExceptions": [
                 "\n          } catch (NumberFormatException ex) {",
                 "            throw new Exception(",
@@ -1656,21 +1651,26 @@
                 "          + \"couldn't parse supplied missingValuePenalty as a number\");",
                 "      }"
             ],
+            "Fichier": "TreeModel.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "AbstractPMMLProducerHelper.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "LogisticProducerHelper.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (JAXBException e) {",
                 "      e.printStackTrace();",
                 "    }",
                 "    return \"\";"
             ],
+            "Fichier": "LogisticProducerHelper.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "RandomizableClassifier.java"
         },
         {
@@ -1700,41 +1700,36 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "DecisionTable.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n            } catch (Exception ee) {",
                 "              System.out.println(ee.getMessage());",
                 "            }",
                 "          } else {"
             ],
+            "Fichier": "DecisionTable.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "DecisionTableHashKey.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "JRip.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      System.err.println(e.getMessage());",
                 "      e.printStackTrace();",
                 "    }"
             ],
+            "Fichier": "JRip.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "M5Rules.java"
         },
         {
             "nbExeptions": 2,
-            "dataExceptions": [],
-            "Fichier": "OneR.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\nimport weka.core.WekaException;",
                 "",
@@ -1753,21 +1748,26 @@
                 "  }",
                 ""
             ],
+            "Fichier": "OneR.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "C45PruneableDecList.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "ClassifierDecList.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      return \"Can't print rule.\";",
                 "    }",
                 "  }"
             ],
+            "Fichier": "ClassifierDecList.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "MakeDecList.java"
         },
         {
@@ -1807,17 +1807,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "DecisionStump.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      return \"Can't print decision stump classifier!\";",
                 "    }",
                 "  }"
             ],
+            "Fichier": "DecisionStump.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "HoeffdingTree.java"
         },
         {
@@ -1867,17 +1867,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "NBNode.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
                 "    }",
                 "  }"
             ],
+            "Fichier": "NBNode.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "NBNodeAdaptive.java"
         },
         {
@@ -1922,32 +1922,32 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
+            "dataExceptions": [
+                "\n    } catch (Exception e) {",
+                "      e.printStackTrace();",
+                "    }",
+                "    return null;"
+            ],
             "Fichier": "BinC45ModelSelection.java"
         },
         {
             "nbExeptions": 0,
-            "dataExceptions": [
-                "\n    } catch (Exception e) {",
-                "      e.printStackTrace();",
-                "    }",
-                "    return null;"
-            ],
+            "dataExceptions": [],
             "Fichier": "BinC45Split.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "C45ModelSelection.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
                 "    }",
                 "    return null;"
             ],
+            "Fichier": "C45ModelSelection.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "C45PruneableClassifierTree.java"
         },
         {
@@ -1957,27 +1957,27 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "ClassifierSplitModel.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (CloneNotSupportedException e) {",
                 "    } ",
                 "    return clone;",
                 "  }"
             ],
-            "Fichier": "ClassifierTree.java"
+            "Fichier": "ClassifierSplitModel.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      return \"Can't print classification tree.\";",
                 "    }",
                 "  }"
             ],
+            "Fichier": "ClassifierTree.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "Distribution.java"
         },
         {
@@ -2007,7 +2007,12 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
+            "dataExceptions": [
+                "\n    } catch (Exception e) {",
+                "      e.printStackTrace();",
+                "      return \"Can't print nb tree.\";",
+                "    }"
+            ],
             "Fichier": "NBTreeClassifierTree.java"
         },
         {
@@ -2015,34 +2020,29 @@
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      e.printStackTrace();",
-                "      return \"Can't print nb tree.\";",
-                "    }"
+                "    }",
+                "    return null;"
             ],
             "Fichier": "NBTreeModelSelection.java"
         },
         {
             "nbExeptions": 0,
-            "dataExceptions": [
-                "\n    } catch (Exception e) {",
-                "      e.printStackTrace();",
-                "    }",
-                "    return null;"
-            ],
+            "dataExceptions": [],
             "Fichier": "NBTreeNoSplit.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "NBTreeSplit.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n          } catch (Exception ex) {",
                 "            ex.printStackTrace();",
                 "            System.err.println(\"*** \" + m_complexityIndex);",
                 "            System.err.println(weights.length);"
             ],
+            "Fichier": "NBTreeSplit.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "NoSplit.java"
         },
         {
@@ -2067,17 +2067,17 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "LMTNode.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n    } catch (Exception e) {",
                 "      return \"Can't print logistic model tree\";",
                 "    }",
                 ""
             ],
+            "Fichier": "LMTNode.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "LogisticBase.java"
         },
         {
@@ -2112,32 +2112,32 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "M5Base.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n      } catch (Exception e) {",
                 "        cont = true;",
                 "      }",
                 ""
             ],
+            "Fichier": "M5Base.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "PreConstructedLinearModel.java"
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "Rule.java"
-        },
-        {
-            "nbExeptions": 0,
             "dataExceptions": [
                 "\n      } catch (Exception e) {",
                 "        return \"Can't print rule\";",
                 "      }",
                 "    }"
             ],
+            "Fichier": "Rule.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "RuleNode.java"
         },
         {
@@ -2162,11 +2162,6 @@
         },
         {
             "nbExeptions": 1,
-            "dataExceptions": [],
-            "Fichier": "RandomForest.java"
-        },
-        {
-            "nbExeptions": 1,
             "dataExceptions": [
                 "\nimport weka.core.WekaException;",
                 "import weka.gui.ProgrammaticProperty;",
@@ -2186,7 +2181,7 @@
                 "    }",
                 ""
             ],
-            "Fichier": "RandomTree.java"
+            "Fichier": "RandomForest.java"
         },
         {
             "nbExeptions": 1,
@@ -2196,16 +2191,21 @@
                 "        return \"RandomTree: tree can't be printed\";",
                 "      }"
             ],
-            "Fichier": "REPTree.java"
+            "Fichier": "RandomTree.java"
         },
         {
-            "nbExeptions": 0,
+            "nbExeptions": 1,
             "dataExceptions": [
                 "\n      } catch (Exception e) {",
                 "        e.printStackTrace();",
                 "        return \"Decision tree: tree can't be printed\";",
                 "      }"
             ],
+            "Fichier": "REPTree.java"
+        },
+        {
+            "nbExeptions": 0,
+            "dataExceptions": [],
             "Fichier": "UpdateableBatchProcessor.java"
         },
         {

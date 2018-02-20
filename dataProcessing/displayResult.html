@@ -8,6 +8,7 @@
     <div id="nbErreurWeka"></div>
     <div id="nbErreurJava"></div>
     <div id="piechart"></div>
+    <div id="piechart2"></div>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -30,6 +31,7 @@
                         // Load google charts
                         google.charts.load('current', { 'packages': ['corechart'] });
                         google.charts.setOnLoadCallback(drawChart);
+                        google.charts.setOnLoadCallback(drawChart2);
                         // Draw the chart and set the chart values
                         function drawChart() {
                             var data = google.visualization.arrayToDataTable([
@@ -45,6 +47,80 @@
                             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
                             chart.draw(data, options);
                         }
+
+                        function isArithmeticException(text) {
+                            if(text.includes("ArithmeticException")){
+                                return true;
+                            }else{
+                                return false;
+                            }
+                        }
+
+                        function isNumberFormatException(text) {
+                            if(text.includes("NumberFormatException")){
+                                return true;
+                            }else{
+                                return false;
+                            }
+                        }
+
+                        function isIllegalArgumentException(text) {
+                            if(text.includes("IllegalArgumentException")){
+                                return true;
+                            }else{
+                                return false;
+                            }
+                        }
+
+
+                        var myTableau = {"Precondition_Arithmetic":0,"Precondition_Format":0,"Argument_illégal":0}
+                    
+                        function createTableau(){
+                            var nbArithme = 0;
+                            var nbIllegalArg = 0;
+                            var nbFormat = 0;
+                            //var autre = 0;
+
+                            jsonData.myDataExecptions.forEach(function (item) {
+                                item.dataExceptions.forEach(function (myExeption) {
+                                        if(isArithmeticException(myExeption)){
+                                            nbArithme++;
+                                        }else if(isNumberFormatException(myExeption)){
+                                            nbFormat++;
+                                        }else if(isIllegalArgumentException(myExeption)){
+                                            nbIllegalArg++;
+                                        }
+                                });
+                            });
+                            myTableau.Precondition_Arithmetic = nbArithme;
+                            myTableau.Precondition_Format = nbFormat;
+                            myTableau.Argument_illégal = nbIllegalArg; 
+                        }
+
+                        createTableau();
+
+
+                       function drawChart2() {
+                            var data = google.visualization.arrayToDataTable([
+                                ['Task', 'Preconditions'],
+                                ['Precondition Arithmetic', myTableau.Precondition_Arithmetic],
+                                ['Precondition Format', myTableau.Precondition_Format],
+                                ['Argument illégal', myTableau.Argument_illégal]
+                                
+                            ]);
+
+                            // Optional; add a title and set the width and height of the chart
+                            var options = { 'title': 'Preconditions dans classifiers', 'width': 550, 'height': 400 };
+
+                            // Display the chart inside the <div> element with id="piechart"
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+                            chart.draw(data, options);
+                        }
+
+                        //isArithmeticException(jsonData.myDataExecptions[3].dataExceptions[2]);
+
+
+
                     }
                 }
             }
