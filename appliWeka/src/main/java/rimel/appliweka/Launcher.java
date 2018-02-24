@@ -97,6 +97,11 @@ import weka.classifiers.trees.RandomForest;
 import weka.classifiers.trees.RandomTree;
 import weka.classifiers.trees.lmt.LogisticBase;
 import weka.core.Capabilities;
+import weka.core.Instances;
+import weka.core.converters.ConverterUtils.DataSource;
+import weka.core.Capabilities.Capability;
+import java.util.Iterator;
+import java.io.PrintWriter;
 
 /**
  *
@@ -108,6 +113,7 @@ public class Launcher {
 
     public static void main(String[] args) throws Exception {
         String inputModel = "";
+        String dataset = "";
         mapcls = new HashMap<>();
 
         mapcls.put("ADTree", new ADTree());
@@ -202,8 +208,74 @@ public class Launcher {
                 case "-mdl":
                     inputModel = args[++i];
                     break;
+                case "-data":
+                    dataset = args[++i];
+                    break;
             }
         }
+
+        DataSource source = new DataSource(dataset);
+        Instances set = source.getDataSet();
+        set.setClassIndex(0);
+
+        Classifier cls = mapcls.get("ZeroR");
+        cls.buildClassifier(set);
+
+        String class1 = "";
+        String class2 = "";
+        String attribute1 = "";
+
+        for (Entry<String, Classifier> entry : mapcls.entrySet()) {
+           Classifier c = entry.getValue();
+           Capabilities attributesCapabilities = c.getCapabilities().getAttributeCapabilities();
+           Capabilities classeCapabilities = c.getCapabilities().getClassCapabilities();
+
+           Iterator<Capability> itClass = classeCapabilities.capabilities();
+           while (itClass.hasNext()) {
+
+               File f = new File("temp");
+               PrintWriter writer = new PrintWriter("temp", "UTF-8");
+               Capability classCapability = itClass.next();
+               Iterator<Capability> itAttribute = attributesCapabilities.capabilities();
+               while (itAttribute.hasNext()) {
+                   Capability attributeCapability = itAttribute.next();
+                   int nbInstanceMin = c.getCapabilities().getMinimumNumberInstances();
+                   for (int i = 0; i < nbInstanceMin; i++) {
+                       //File f = new File("temp");
+                      // System.out.print(classCapability.toString()+",");
+
+                       //System.out.println(attributeCapability.toString());                       
+                       
+
+                       /*DataSource source = new DataSource(dataset);
+                       Instances set = source.getDataSet();
+                       set.setClassIndex(0);
+                       Classifier cls = mapcls.get("ZeroR");
+                       cls.buildClassifier(set);*/
+
+                   }
+                   for (int i = 0; i < nbInstanceMin; i++) {
+                       //File f = new File("temp");
+
+                       System.out.println(attributeCapability.toString()+",");
+                      // switch (attributeCapability.toString()) {
+                       
+                       
+
+                       /*DataSource source = new DataSource(dataset);
+                       Instances set = source.getDataSet();
+                       set.setClassIndex(0);
+                       Classifier cls = mapcls.get("ZeroR");
+                       cls.buildClassifier(set);*/
+
+                   }
+               }
+           }
+       }
+
+
+
+
 
         //---------------------------------Chargement du model------------------------------
         /*Classifier cls = (Classifier) weka.core.SerializationHelper.read(inputModel);
@@ -217,6 +289,8 @@ public class Launcher {
          Capabilities otherCapa = capa.getOtherCapabilities();
          result += otherCapa.toString() + "\n";
          saveResult("Result", result);*/
+
+
         String result = "";
         for (Entry<String,Classifier> entry : mapcls.entrySet()) {
             Classifier c = entry.getValue();
@@ -228,7 +302,56 @@ public class Launcher {
             Capabilities otherCapa = capa.getOtherCapabilities();
             result += otherCapa.toString() + "\n";
         }
-        saveResult("Result", result);
+
+        //saveResult("Result", result);
+    }
+
+    private static String classWrite(String s){
+        switch (s){
+            case "Nominal class":
+               return "";
+            case "Missing class values":
+                return "";
+            case "Binary class":
+                return "";
+            case "Date class":
+                return "";
+            case "Numeric class":
+                return "";
+            case "Unary class":
+                return "";
+            case "String class":
+                return "";
+            case "Relational class":
+                return "";
+            case "Empty nominal class":
+                return "";
+        }
+        return "";
+    }
+
+    private static String attributeWrite(String s){
+        switch (s){
+            case "Binary attributes":
+               return "";
+            case "Missing values":
+                return "";
+            case "Date attributes":
+                return "";
+            case "Empty nominal attributes":
+                return "";
+            case "Unary attributes":
+                return "";
+            case "Numeric attributes":
+                return "";
+            case "Relational attributes":
+                return "";
+            case "String attributes":
+                return "";
+            case "Nominal attributes":
+                return "";
+        }
+        return "";
     }
 
     private static void saveResult(String pathOutput, String test) {
