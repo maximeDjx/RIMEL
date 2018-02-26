@@ -242,7 +242,8 @@ public class Launcher {
                    int nbInstanceMin = c.getCapabilities().getMinimumNumberInstances();
                    for (int i = 0; i < nbInstanceMin; i++) {
                        //File f = new File("temp");
-                      // System.out.print(classCapability.toString()+",");
+                       //System.out.println(classWrite(classCapability.toString())+","+attributeWrite(attributeCapability.toString()));
+                       writer.println("\""+classWrite(classCapability.toString())+"\""+","+"\""+attributeWrite(attributeCapability.toString())+"\"");
 
                        //System.out.println(attributeCapability.toString());                       
                        
@@ -257,7 +258,7 @@ public class Launcher {
                    for (int i = 0; i < nbInstanceMin; i++) {
                        //File f = new File("temp");
 
-                       System.out.println(attributeCapability.toString()+",");
+                       //System.out.println(attributeCapability.toString()+",");
                       // switch (attributeCapability.toString()) {
                        
                        
@@ -270,6 +271,7 @@ public class Launcher {
 
                    }
                }
+               writer.close();
            }
        }
 
@@ -309,49 +311,51 @@ public class Launcher {
     private static String classWrite(String s){
         switch (s){
             case "Nominal class":
-               return "";
+               return "test";
             case "Missing class values":
-                return "";
+                return "test";
             case "Binary class":
-                return "";
+                return "test";
             case "Date class":
-                return "";
+                return "test";
             case "Numeric class":
-                return "";
+                return "test";
             case "Unary class":
-                return "";
+                return "test";
             case "String class":
-                return "";
+                return "test";
             case "Relational class":
-                return "";
+                return "test";
             case "Empty nominal class":
-                return "";
+                return "test";
+            default:
+                return "test";
         }
-        return "";
     }
 
     private static String attributeWrite(String s){
         switch (s){
             case "Binary attributes":
-               return "";
+               return "123";
             case "Missing values":
-                return "";
+                return "123";
             case "Date attributes":
-                return "";
+                return "123";
             case "Empty nominal attributes":
-                return "";
+                return "123";
             case "Unary attributes":
-                return "";
+                return "123";
             case "Numeric attributes":
-                return "";
+                return "123";
             case "Relational attributes":
-                return "";
+                return "123";
             case "String attributes":
-                return "";
+                return "123";
             case "Nominal attributes":
-                return "";
+                return "123";
+            default:
+                return "123";
         }
-        return "";
     }
 
     private static void saveResult(String pathOutput, String test) {
